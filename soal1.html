@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Mahasiswa</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 5px;
+            background: white;
+        }
+
+        .form-container {
+            width: 270px;
+            padding: 10px 15px;
+            border: 6px solid #76c6d8;
+            border-radius: 2px;
+            margin: 0 auto;
+        }
+
+        .label {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .data {
+            font-size: 14px;
+            padding: 3px 0 10px;
+            border-bottom: 2px solid #ddd;
+            margin: 0 8px 8px;
+            min-height: 17px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let nama = prompt("Masukkan nama kamu:");
+        let nim = prompt("Masukkan nim kamu:");
+
+        document.write(`
+            <div class="form-container">
+                <div class="label">Nama</div>
+                <div class="data">${nama || ""}</div>
+
+                <div class="label">NIM</div>
+                <div class="data">${nim || ""}</div>
+            </div>
+        `);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bermain dengan Warna</title>
+
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h2>Bermain dengan Warna</h2>
+
+    <div class="tombol-warna">
+        <button id="ungu">Ungu</button>
+        <button id="biru">Biru</button>
+        <button id="hijau">Hijau</button>
+    </div>
+
+    <div id="kotak"></div>
+
+    <div class="tombol-kotak">
+        <button id="sembunyikan">Sembunyikan Kotak</button>
+        <button id="tampilkan">Tampilkan Kotak</button>
+    </div>
+
+    <p>Klik tombol warna untuk mengubah warna kotak.</p>
+
+    <p>
+        Gunakan tombol Sembunyikan dan Tampilkan untuk menyembunyikan dan
+        menampilkan kotak.
+    </p>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#ungu").click(function() {
+                $("#kotak").css("background-color", "purple");
+            });
+
+            $("#biru").click(function() {
+                $("#kotak").css("background-color", "blue");
+            });
+
+            $("#hijau").click(function() {
+                $("#kotak").css("background-color", "green");
+            });
+
+            $("#sembunyikan").click(function() {
+                $("#kotak").hide();
+            });
+
+            $("#tampilkan").click(function() {
+                $("#kotak").show();
+            });
+
+        });
+    </script>
+
+</body>
+</html>
